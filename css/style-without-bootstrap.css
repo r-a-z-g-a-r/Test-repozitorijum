@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: "Roboto";
+	src: url("fonts/roboto-regular-webfont.woff");
+	src: url("fonts/roboto-regular-webfont.woff2");
+}
+@font-face {
+	font-family: "Antonio Bold";
+	src: url("fonts/antonio-bold-webfont.woff");
+	src: url("fonts/antonio-bold-webfont.woff2");
+}
+@font-face {
+	font-family: "Antonio Regular";
+	src: url("fonts/antonio-regular-webfont.woff");
+	src: url("fonts/antonio-regular-webfont.woff2");
+}
+@font-face {
+	font-family: "Antonio Light";
+	src: url("fonts/antonio-light-webfont.woff");
+	src: url("fonts/antonio-light-webfont.woff2");
+}
+
+body {
+	font-family: "Roboto";
+	color: white;
+	background-color: black;
+	background-image: url("images/burial.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#wrapper {
+	background-color: rgba(0,0,0,0);
+	margin: 20px auto;
+	width: 1080px;
+}
+
+header {
+	background-color: black;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+#main {
+	background-color: rgb(10,10,10);
+	padding: 15px;
+	margin-right: 12px;
+}
+
+#content {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+aside {
+	background-color: rgb(12,12,12);
+	padding: 15px;
+	max-width: 200px;
+	height: 100%;
+	position: sticky;
+	top: 0;
+}
+
+footer {
+	background-color: black;
+	padding: 15px;
+	font-family: "Arial", sans-serif;
+	font-size: 10pt;
+}
+
+footer p {
+	margin: 0;
+}
+
+aside h3 {
+	margin: 5px auto;
+}
+
+h1 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: "Antonio Bold";
+}
+
+header h1 {
+	font-size: 32pt;
+	text-transform: uppercase;
+}
+
+h2, h3 {
+	font-family: "Antonio Regular";
+	margin-bottom: 5px;
+}
+
+h3 {
+	font-family: "Antonio Light";
+}
+
+ul {
+	padding-left: 30px;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: 150ms all ease-in-out;
+	-moz-transition: 150ms all ease-in-out;
+}
+
+a:link{
+	color: rgb(180, 180, 180);
+}
+
+a:visited {
+	color: rgb(100, 100, 100);
+}
+
+a:hover{
+	color: white;
+}
+
+.collapse {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	background: none;
+	border: none;
+	font-family: "Antonio Regular";
+	font-size: 22px;
+	color: rgb(180, 180, 180);
+	-webkit-transition: 150ms all ease-in-out;
+	-moz-transition: 150ms all ease-in-out;
+}
+
+button:hover{
+	color: white;
+}
+
+#headimage {
+	margin: 20px 20px 10px 0;
+}
+
+.figure1 {
+	margin: 3px 20px 20px 0;
+	float: left;
+}
+
+.figure2 {
+	margin: 3px 0 20px 20px;
+	float: right;
+}
+
+figure {
+	display: table;
+}
+
+figcaption {
+	display: table-caption;
+	caption-side: bottom;
+	font-size: 11pt;
+	background-color: black;
+	padding: 3px;
+}
+
+#images {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.block {
+	background-color: rgb(15,15,15);
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 4px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.block img {
+	margin-bottom: 3px;
+}
+
+.essentials {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	align-content: center;
+	position: relative;
+	right: 30px;
+}
+
+.essentials img {
+	max-width: 200px;
+}
+
+.essentials audio {
+	max-width: 200px;
+}
+
+.essentials figcaption {
+	max-width: 200px;
+}
+
+.album {
+	width: 220px;
+}
+
+@media screen and (max-width:1279px) {
+	#wrapper {
+		width: 92%;
+	}
+}
+
+@media screen and (max-width:936px) {
+	.essentials img {
+	max-width: 175px;
+	}
+
+	.essentials audio {
+		max-width: 175px;
+	}
+
+	.essentials figcaption {
+		max-width: 175px;
+	}
+
+	.album {
+		width: 195px;
+	}
+}
+
+@media screen and (max-width:751px) {
+	#wrapper {
+		width: 92%;
+	}
+	#content {
+		display: block;
+	}
+	#main {
+		margin-right: 0px;
+		margin-bottom: 12px;
+	}
+	aside {
+		display: none;
+	}
+	.essentials img {
+	max-width: 175px;
+	}
+
+	.essentials audio {
+		max-width: 175px;
+	}
+
+	.essentials figcaption {
+		max-width: 175px;
+	}
+
+	.album {
+		width: 195px;
+	}
+}
